@@ -1,6 +1,6 @@
 ﻿public class Program
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         const string MsgInput1 = "Enter the first integer:";
         const string MsgInput2 = "Enter the second integer";
