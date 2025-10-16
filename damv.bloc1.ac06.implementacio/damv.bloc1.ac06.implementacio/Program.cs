@@ -1,15 +1,15 @@
 ﻿public class Program
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
-        const double ExchangeRate = 1.12;
+        const decimal ExchangeRate = 1.12m;
         const string MsgInput = "Enter amount in euros: ";
         const string MsgResult = "Amount in dollars: ";
 
-        double euros, dollars;
+        decimal euros, dollars;
 
         Console.Write(MsgInput);
-        euros = Convert.ToDouble(Console.ReadLine());
+        euros = Convert.ToDecimal(Console.ReadLine());
         dollars = euros * ExchangeRate;
         Console.WriteLine(MsgResult + dollars);
     }
