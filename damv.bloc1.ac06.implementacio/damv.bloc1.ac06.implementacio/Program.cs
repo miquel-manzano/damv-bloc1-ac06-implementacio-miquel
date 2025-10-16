@@ -5,11 +5,11 @@
         const string MsgInput = "Enter temperature in Celsius: ";
         const string MsgResult = "Temperature in Kelvin: ";
 
-        double celsius, kelvin;
+        float celsius, kelvin;
 
         Console.Write(MsgInput);
-        celsius = Convert.ToDouble(Console.ReadLine());
-        kelvin = celsius + 273.15;
+        celsius = (float)Convert.ToDouble(Console.ReadLine());
+        kelvin = celsius + 273.15f;
         Console.WriteLine(MsgResult + kelvin);
     }
 }
